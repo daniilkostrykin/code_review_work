@@ -7,7 +7,7 @@ public class Calculator {
     }
     public int div(int a, int b){
         if (b == 0) {
-            throw new ArithmeticException("Zero division error");
+            throw new IllegalArgumentException("Division by zero is not allowed");
         }
         return a / b;
     }
@@ -17,5 +17,6 @@ public class Calculator {
     public int solver(){
         int division = div(100, 2);
         return dif(division, 8);
+
     }
 }

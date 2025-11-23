@@ -10,7 +10,7 @@ class CalculatorTest {
     @Test
     void dif() {
         Calculator calculator = new Calculator();
-        assertEquals(5, calculator.dif(10, 5));
+        assertEquals(2, calculator.dif(5, 3));
     }
     @Test
     void div() {
@@ -21,11 +21,12 @@ class CalculatorTest {
     @Test
     void times() {
         Calculator calculator = new Calculator();
-        assertEquals(25, calculator.times(5, 5));
+        assertEquals(6, calculator.times(2, 3));
     }
     @Test
     void solver() {
         Calculator calculator = new Calculator();
         assertEquals(42, calculator.solver());
+        assertEquals(16, calculator.solver());
     }
 }
