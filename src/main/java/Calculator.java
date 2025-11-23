@@ -15,7 +15,8 @@ public class Calculator {
         return a * b;
     }
     public int solver(){
-        int multiplication = times(2, 3);
-        return add(multiplication, 10);
+        int division = div(100, 2);
+        return dif(division, 8);
+
     }
 }
